@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sunghwan park">
+    <meta name="keywords" content="at자격시험,FAT,TAT">
+    <meta name="description" content="at자격시험,FAT,TAT">
+    <meta name="robots" content="at자격시험,FAT,TAT">
+    <link rel="shortcut icon" href="images/Acon.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/join.css">
+    <title>회원가입</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <!--skip navigation link 시작 -->
+    <a id="skipNav" href="#contentsArea">본문바로가기</a>
+    <!--skip navigation link 종료 -->
+
+    <!-- wrapper 영역 시작 -->
+    <div id="wrapper">
+        <!-- header 영역 시작 -->
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.jpg" alt="국가공인at자격시험">
+                </a>
+            </div>
+            <h1><a href="index.html">국가공인 <span>AT</span>자격시험</a></h1>
+            <ul class="infoLink">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">알림</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+            </ul>
+            <!-- role(웹 접근성/시멘틱태그) - 요소의 의미 전달 -->
+            <nav role="navigation">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">시험안내</a>
+                        <ul class="aboutTest">
+                            <li><a href="test_introduce_1.html">AT소개</a></li>
+                            <li><a href="#">AT시험종류</a></li>
+                            <li><a href="#">AT시험일정</a></li>
+                            <li><a href="#">회차별합격률</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">원서접수</a>
+                        <ul class="aboutReceipt">
+                            <li><a href="#">개별접수</a></li>
+                            <li><a href="#">단체접수</a></li>
+                            <li><a href="#">접수내역</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li><a href="#">자격증</a>
+                        <ul class="aboutLicense">
+                            <li><a href="#">자격증신청</a></li>
+                            <li><a href="#">자격조회</a></li>
+                            <li><a href="#">자격증갱신</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">알림마당</a>
+                        <ul class="aboutAlarm">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는질문</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">구인안내</a></li>
+                            <li><a href="#">학원안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">마이페이지</a>
+                        <ul class="aboutMy">
+                            <li><a href="#">원서접수관리</a></li>
+                            <li><a href="#">자격증관리</a></li>
+                            <li><a href="#">확인서발급</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">회원정보관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header 영역 종료 -->
+
+        <!--top_Menu 영역 시작  -->
+        <div id="top_Menu">
+            <!-- visual 영역 시작 -->
+            <div class="main_visual">
+                <img src="images/sub_bg7.jpg" alt="">
+            </div>
+            <!-- visual 영역 종료 -->
+        </div>
+        <!--top_Menu 영역 종료  -->
+
+        
+        <!-- main contents 영역 시작 -->
+        <div id="contentsArea">
+            <div id="left">
+                <div id="leftMenu">
+                    <div id="left_title">
+                        <h3>회원가입</h3>
+                    </div>
+                    <div id="left_sub">
+                        <ul>
+                            <li><a href="join.html">회원가입</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">ID/비밀번호 찾기</a></li>
+                            <li><a href="#">개인정보취급정책</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mainArea">
+                <section class="user_Info">
+                    <h2>회원정보</h2>
+                    <p class="formSign">(<strong class="require">필수</strong>는 반드시 입력하여야 합니다.)</p>
+                    <form action="join.jsp" method="post" id="joinForm" name="joinForm">
+                        <fieldset>
+                            <legend>회원 정보 입력</legend>
+                            <p>
+                                <label for="name">성명<strong class="require">필수</strong></label>
+                                <input type="text" id="name" name="name" required placeholder="홍길동">
+                            </p>
+                            <p>
+                                <label for="picture">사진<strong class="require">필수</strong></label>
+                                <input type="file" id="picture" name="picture" required >
+                            </p>
+                            <p>
+                                <label for="id">아이디<strong class="require">필수</strong></label>
+                                <input type="text" id="id" name="id" required placeholder="아이디">
+                                <a href="pop_idCheck.html" class="idCheck">ID중복확인</a>
+                            </p>
+                            <p>
+                                <label for="password">비밀번호<strong class="require">필수</strong></label>
+                                <input type="password" id="password" name="password" required placeholder="영문/숫자 4~8자 이내">
+                            </p>
+                            <p>
+                                <label for="confirmPassword">암호 확인<strong class="require">필수</strong></label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="영문/숫자 4~8자 이내">
+                            </p>
+                            <p>
+                                <label for="address" class="labelAddress">주소</label>
+                                <a href="find_zipcode.html" class="findZipcode">우편번호찾기</a>
+                                <input type="tel" id="zipcode" name="zipcode" maxlength="5" size="6" title="우편번호">
+                                <input type="text" id="address" name="address" maxlength="100" size="60" placeholder="입력 예)서울시 중구 신당동 5번지">
+                            </p>
+                            <p>
+                                <label for="tel">연락처</label>
+                                <input type="tel" id="tel" name="tel" maxlength="11" size="20" title="하이픈(-)은 입력할 수 없습니다." placeholder="입력 예)010-7777-3333">
+                            </p>
+                            <p>
+                                <label for="confirmPassword">이메일<strong class="require">필수</strong></label>
+                                <input type="email" id="email" name="email" size="30" required placeholder="입력 예)abcde@naver.com">
+                            </p>
+                           
+                            <div class="btnJoinArea">
+                                <button type="submit" class="btnOk">회원가입</button>
+                                <button type="reset" class="btnCancel">취소</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <!-- main contents 영역 종료 -->
+
+        <!-- footer 영역 시작 -->
+        <footer id="footer">
+            <div class="footerInner">
+                <section class="guide">
+                    <ul>
+                        <li><a href="#">원격지원</a></li>
+                        <li><a href="#">개인정보처리방법</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </section>
+                <address>
+                    <span>서울특별시 서대문구 충정로7길 12(충정로 2가) 한국공인회계사회 대표자 김영식</span>
+                    <span>TEL : 02-3149-0236~2</span>
+                    <span>사업자등록번호 : 102-82-02601</span>
+                    <br>
+                    <span>개인정보보호 책임자 : 이향복(at@kicpa.or.kr) : Copyright &copy; KICPA All rights Reserved.</span>
+                </address>
+            </div>
+        </footer>
+        <!-- footer 영역 종료 -->
+
+    </div>
+    <!-- wrapper 영역 종료 -->
+</body>
+
+</html>

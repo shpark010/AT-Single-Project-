@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* top_Menu 영역 시작 */
+em {
+    color: #5578e3;
+    font-style: normal;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.7em;
+}
+#top_Menu {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+/* visual 영역 시작 */
+.main_visual {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+.main_visual > img {
+    position: absolute;
+    width: 100%;
+    height: 250px;  
+    display: none;
+}
+.main_visual > img:first-child {
+    display: inline-block;
+}
+.main_visual p{
+    font-family: 'NanumEX';
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    z-index: 10;
+}
+.main_visual span {
+    color: #f80101;
+    font-size: 1.5em;
+}
+.main_visual>.p1 {
+    position: absolute;
+    top: 5%;
+    left: 37%;
+}
+.main_visual>.p2 {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 24%;
+}
+/* visual 영역 종료 */
+.top-main {
+    width: 1100px;
+    height: 260px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+}
+/* .top-main {
+    height: 264px;
+    position: relative;
+} */
+.top {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 180px;
+    height: 254px;
+    position: relative;
+    margin-left: 12px;
+    box-shadow: 0 0 8px #c9c9c9;
+    border-radius: 3px;
+    white-space: nowrap;
+    background-color: #fff;
+}
+.top h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+}
+.top > .content {
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+}
+.btn {
+    width: 80px;
+    height: 25px;
+    margin: 15px auto 0;
+    border: 2px solid #cdcdcd;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn p {
+    display: inline-block;
+    height: 30px;
+}
+
+/* top_Menu 영역 종료 */
+
+/* main contents 영역 시작 */
+#contentsArea section{
+    border-radius: 5px;
+}
+/* topArea 영역 시작 */
+#topArea {
+    width: 100%;
+    position: relative;
+}
+#topArea section {
+    border: 1px solid #dcdcdc;
+    height: 340px;
+}
+/* test schedule 영역 시작 */
+.schedule {
+    float: left;
+    width: 70%;
+    position: relative;
+}
+.schedule h3 {
+    width: 95%;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.schedule  table {
+    border: 1px solid #ccc;
+    width: 97%;
+    text-align: center;
+    margin: 20px auto 5px;
+    border-collapse: collapse;
+}
+
+.schedule  table  th{
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #5578e3;
+    padding: 10px 15px;
+}
+.schedule   table  td {
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+}
+.schedule tbody tr td:nth-child(4) {
+    color: #f80101;
+    font-weight: bold;
+}
+.schedule .more {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+.schedule tbody tr:first-child {
+    background-color: #fff2f4;
+}
+.schedule tbody tr:nth-child(2) {
+    background-color: #f1fcff;
+}
+
+/* test schedule 영역 종료 */
+
+/* login 영역 시작 */
+.login {
+    width: 28%;
+    position: relative;
+    float: right;
+}
+.login h3 {
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.login form {
+    margin-top: 30px;
+    border-bottom: none;
+}
+.login p {
+    margin-top: 10px;
+    color: #505050;
+    font-weight: bold;
+    text-align: center;
+}
+.login label {
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+    margin-top: 9px;
+    margin-right: 7px;
+    border-radius: 2px;
+    padding: 2px 4px 2px 0;
+}
+.login input {
+    width: 130px;
+    height: 29px;
+}
+.login button {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background-color: #5578e3;
+    border: 1px solid #fff;
+    /* margin-top: 15px; */
+    border-radius: 5px;
+    margin: 15px 25px 0;
+}
+.login button:hover {
+    background-color: #2f57cf;
+}
+.login button:hover {
+    cursor: pointer;
+}
+.memberLink {
+    margin-top: 10px;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.memberLink a:first-child:hover {
+    color: #5aabe0;
+    text-decoration: underline;
+}
+.memberLink a:last-child:hover {
+    color: #f80101;
+    text-decoration: underline;
+}
+.innerLogin {
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #ededed;
+    height: 230px;
+    background-image: linear-gradient(to bottom right, rgba(236, 243, 224, 0.7) 0%, rgba(233, 241, 228, 0.4) 100%);
+}
+/* login 영역 종료 */
+/* topArea 영역 종료 */
+
+/* middleArea 영역 시작 */
+#middleArea {
+    position: relative;
+    margin-top: 15px;
+}
+#middleArea section{
+    border: 1px solid #dcdcdc;
+    height: 340px;
+}
+/* notice 영역 시작 */
+.notice {
+    float: left;
+    width: 65%;
+    border: 1px solid #dcdcdc;
+    position: relative;
+}
+.notice h3 {
+    width: 95%;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.notice ul {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.notice li {
+    padding: 8px 0;
+    width: 97%;
+    border-bottom: 1px solid #ededed;
+    font-size: 1.1em;
+}
+.notice li:first-child {
+    padding-top: 0;
+}
+.notice li::before {
+    font-family: 'webcafeIcon';
+    content: "r";
+    color: #666;
+    position: relative;
+    top: 3px;
+}
+.notice li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.notice li a:hover {
+    color: #f80101;
+}
+.notice time {
+    float: right;
+}
+.notice .more {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+/* notice 영역 종료 */
+
+/* timetable 영역 시작 */
+.timetable {
+    float: right;
+    width: 33%;
+    height: 100%;
+    position: relative;
+}
+.timetable h3 {
+    width: 92%;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 0;
+    margin-left: 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.timetable table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin: 20px auto 0;
+    border: 1px solid #ccc;
+
+}
+.timetable td, .timetable th {
+    border: 1px solid #ccc;
+    padding: 8px 13px;
+}
+.timetable th {
+    background-color: #5578e3;
+    color: #fff;
+}
+.detail {
+    text-align: center;
+    margin-top: 10px;
+}
+.timetable h4 {
+    margin: 8px;
+}
+.timetable span {
+    color: #f80101;
+    font-weight: bold;
+}
+.timetable #center {
+    margin-top: 8px;
+}
+/* timetabel 영역 종료 */
+/* middleArea 영역 종료 */
+
+/* favorite 영역 시작 */
+#favorite {
+    margin-top: 10px;
+    width: 100%;
+    height: 230px;
+}
+.inquire {
+    margin: 20px;
+}
+.inquire a {
+    width: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.inquire h3 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-left:10px;
+}
+.inquire img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+.inquire p {
+    margin-top: 10px;
+    text-align: center;
+}
+.btnArea a:hover p {
+    color: #ff909f;
+}
+.btnArea a:hover {
+    background: rgb(253,255,219);
+background: radial-gradient(circle, rgba(253,255,219,1) 0%, rgba(253,255,219,0) 100%);
+}
+
+/* favorite 영역 종료 */
+
+
+

@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* 초기화 */
+html, body, div, header, nav, section, aside, article, form, fieldset, footer, figure, figcaption, legend, ul, ol, li, dl,
+dt, dd, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+fieldset {
+    border: 0;
+}
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px;
+}
+
+/* 웹 폰트 */
+@font-face {
+    font-family: "Nanum";
+    font-weight: 400;
+    src: url("font/NanumGothic.eot?#iefix") format("embedded-opentype"),
+         url("font/NanumGothic.woff") format("woff"),
+         url("font/NanumGothic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "NanumBold";
+    font-weight: 400;
+    src: url("font/NanumGothicBold.eot?#iefix") format("embedded-opentype"),
+         url("font/NanumGothicBold.woff") format("woff"),
+         url("font/NanumGothicBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "NanumEX";
+    font-weight: 400;
+    src: url("font/NanumGothicExtraBold.eot?#iefix") format("embedded-opentype"),
+         url("font/NanumGothicExtraBold.woff") format("woff"),
+         url("font/NanumGothicExtraBold.ttf") format("truetype");
+}
+
+/* 도형 글꼴 */
+@font-face {
+    font-family: "webcafeIcon";
+    font-weight: 400;
+    src: url("font/webcafeIcon.eot?#iefix") format("embedded-opentype"),
+         url("font/webcafeIcon.woff") format("woff"),
+         url("font/webcafeIcon.ttf") format("truetype"),
+         url("font/webcafeIcon.svg#webcaferegular") format("svg");
+}
+
+/* 링크 스타일 */
+a:link {
+    color: #303030;
+    text-decoration: none;
+}
+a:visited {
+    color: #606060;
+}
+
+/* 기본 스타일 */
+body {
+    font-family: "Nanum";
+    color: #333;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+/* skip nav */
+#skipNav {
+    position: absolute;
+    left: -9999px;
+}
+
+#skipNav:focus {
+left: 50%;
+margin: 3px 0 0 -3px;
+padding: 5px 15px;
+background-color: #000;
+color: #fff;
+outline: 0;
+z-index: 10;
+}
+
+/* 전체 레이아웃 */
+header, #contentsArea, .footerInner {
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.top-main {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* header 영역 시작 */
+header {
+    height: 180px;
+    position: relative;
+    background-color: #fff;
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+    top: 5px;
+    left: 50px;
+    height: 80px;
+}
+.logo img{
+    width: 150px;
+    height: 80px;
+}
+h1 {
+    display: inline-block;
+    position: absolute;
+    left: 37%;
+    line-height: 100px;
+    font-size: 30px
+}
+
+h1 span {
+    color: #f80101;
+    font-weight: bold;
+}
+.infoLink {
+    text-align: right;
+    padding-top: 10px;
+}
+.infoLink li {
+    display: inline-block;
+    padding: 8px 0 7px 3px;
+    margin-left: 10px;
+}
+.infoLink li:hover a {
+    color: #f80101;
+}
+.infoLink a::before {
+    content: "|";
+    padding-right: 15px;
+}
+.infoLink li:first-child a::before {
+    content: "";
+}
+.mainMenu {
+    width: 1000px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    position: absolute;
+    top: 100px;
+}
+.mainMenu li {
+    position: relative;
+}
+.mainMenu li, .mainMenu a {
+    display: inline-block;
+}
+.mainMenu > li > a {
+    font-family: "NanumEX";
+    font-size: 1.3em;
+    padding: 15px 10px 10px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-left: 95px;
+}
+.mainMenu >li > a:focus {
+    color: #A2BCAA;
+}
+.mainMenu ul {
+    position: absolute;
+    z-index: 10;
+    white-space: nowrap;
+}
+.mainMenu ul a {
+    padding: 4px 0 7px 15px;
+    color: #606060;
+    font-weight: bold;
+}
+.mainMenu > li:hover ul {
+    display: block;
+    padding: 5px 0;
+    font-size: 1.2em;
+}
+.mainMenu ul > li:hover a {
+    color: #da4646;
+}
+.aboutTest, .aboutReceipt, .aboutLicense, .aboutAlarm {
+    display: none;
+}
+.aboutReceipt {
+    left: 20px;
+}
+.aboutAlarm {
+    left: -70px;
+}
+.aboutMy {
+    display: none;
+    right: 0;
+}
+/* header 영역 종료 */
+
+/* main contents 영역 시작 */
+#contentsArea {
+    min-height: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    top: -30px;
+}
+#contentsArea .more:hover {
+    color: #f80101;
+}
+/* main contents 영역 종료 */
+
+/* footer 영역 시작 */
+footer {
+    height: 150px;
+    background-color: rgba(233, 229, 229, 0.74);
+}
+.footerInner {
+    padding-top: 20px;
+}
+footer section  {
+    height: 23px;
+    margin-top: 5px;
+    border-bottom: 1px solid #ccc;
+}
+.guide li{
+    display: inline-block;
+    margin-left: 25px;
+    font-family: 'Nanum';
+    font-weight: bold;
+    font-size: 13px;
+}
+.guide li:first-child a {
+    color: #f80101;
+}
+.guide li:nth-child(2) a {
+    color: rgb(27, 27, 221);
+}
+address {
+    margin-top: 20px;
+    font-style: normal;
+}
+address > span {
+    margin-left: 10px;
+}
+address > span::before {
+    content: '|';
+    padding-right: 20px;
+}
+address > span:first-child::before {
+    content: "";
+}
+address > span:last-child::before {
+    content: "";
+}
+/* footer 영역 종료 */
